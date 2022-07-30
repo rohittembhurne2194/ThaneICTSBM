@@ -123,5 +123,18 @@ namespace SwachhBharatAbhiyan.CMS.Controllers
             else
                 return Redirect("/Account/Login");
         }
+
+        [HttpPost]
+        public string IsLIdEOnHSAndUM(string LoginId)
+        {
+
+            int AppID = SessionHandler.Current.AppId;
+            childRepository = new ChildRepository(AppID);
+            var isrecord = childRepository.GetLoginidData(LoginId);
+
+            return isrecord;
+
+
+        }
     }
 }

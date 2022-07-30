@@ -318,6 +318,11 @@ namespace SwachBharat.CMS.Bll.Repository.ChildRepository
             screenService.DeleteEmployeeDetails(teamId);
         }
 
+        public string GetLoginidData(string LoginId)
+        {
+            return screenService.GetLoginidData(LoginId);
+        }
+
         public void SaveEmployee(EmployeeDetailsVM employee,string Emptype)
         {
             screenService.SaveEmployeeDetails(employee, Emptype);

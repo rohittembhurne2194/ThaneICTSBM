@@ -1514,6 +1514,27 @@ namespace SwachBharat.CMS.Bll.Services
             }
         }
 
+        public string GetLoginidData(string LoginId)
+        {
+
+            using (var db = new DevChildSwachhBharatNagpurEntities(AppID))
+            {
+                var isrecord = db.QrEmployeeMasters.Where(x => x.qrEmpLoginId == LoginId && x.isActive == true).FirstOrDefault();
+                var isrecord1 = db.UserMasters.Where(x => x.userLoginId == LoginId && x.isActive == true).FirstOrDefault();
+                if (isrecord == null && isrecord1 == null)
+                {
+                    return "0";
+                }
+                else
+                {
+                    return "1";
+                }
+            }
+
+
+
+        }
+
         public void SaveEmployeeDetails(EmployeeDetailsVM data, string Emptype)
         {
             try

@@ -100,6 +100,8 @@ namespace SwachBharat.CMS.Bll.Repository.ChildRepository
 
         SBAAttendenceSettingsGridRow GetAttendenceEmployeeById(int teamId);
         void DeleteEmployee(int teamId);
+        string GetLoginidData(string utype);
+
         void SaveEmployee(EmployeeDetailsVM employee,string Emptype);
 
         void SaveAttendenceSettingsDetail(SBAAttendenceSettingsGridRow atten);

@@ -88,6 +88,8 @@ namespace SwachBharat.CMS.Bll.Services
 
         SBAAttendenceSettingsGridRow GetAttendenceEmployeeById(int teamId);
         void DeleteEmployeeDetails(int teamId);
+        string GetLoginidData(string LoginId);
+
         void SaveEmployeeDetails(EmployeeDetailsVM employee,string Emptype);
 
         void SaveAttendenceSettingsDetail(SBAAttendenceSettingsGridRow atten);
