@@ -637,18 +637,18 @@
                                                 if (results[1]) {
                                                     //alert("Location: " + results[1].formatted_address);
                                                     var address = results[1].formatted_address;
-                                                    infoWindow.setContent('<div class=infowindow style="max-width:190px"> <h3>' + data.userName + '</h3><h5><b>Employee Details:</b></h5><p><b>Date:</b>' + data.date + '</p><p><b>Time:</b>' + data.time + '</p><p><b>Mobile:</b>' + data.userMobile + '<p><b>Vehicle No:</b>' + data.vehcileNumber + '</p><div style="height:auto; width:150px"><p><b>Address:</b>' + address + '</p></div></div>');
+                                                    infoWindow.setContent('<div class=infowindow style="max-width:190px"> <h3>' + data.userName + '</h3><h5><b>Employee Details:</b></h5><p><b>Date:</b>' + data.date + '</p><p><b>Time:</b>' + data.time + '</p><p><b>Mobile:</b>' + data.userMobile + '<div style="height:auto; width:150px"><p><b>Address:</b>' + address + '</p></div></div>');
                                                     infoWindow.open(map, marker);
                                                 }
                                                 else {
                                                     var address = "Not Mention";
-                                                    infoWindow.setContent('<div class=infowindow style="max-width:190px"> <h3>' + data.userName + '</h3><h5><b>Employee Details:</b></h5><p><b>Date:</b>' + data.date + '</p><p><b>Time:</b>' + data.time + '</p><p><b>Mobile:</b>' + data.userMobile + '<p><b>Vehicle No:</b>' + data.vehcileNumber + '</p><div style="height:auto; width:150px"><p><b>Address:</b>' + address + '</p></div></div>');
+                                                    infoWindow.setContent('<div class=infowindow style="max-width:190px"> <h3>' + data.userName + '</h3><h5><b>Employee Details:</b></h5><p><b>Date:</b>' + data.date + '</p><p><b>Time:</b>' + data.time + '</p><p><b>Mobile:</b>' + data.userMobile + '<div style="height:auto; width:150px"><p><b>Address:</b>' + address + '</p></div></div>');
                                                     infoWindow.open(map, marker);
                                                 }
 
                                             }
                                             else {
-                                                infoWindow.setContent('<div class=infowindow style="max-width:190px"> <h3>' + data.userName + '</h3><h5><b>Employee Details:</b></h5><p><b>Date:</b>' + data.date + '</p><p><b>Time:</b>' + data.time + '</p><p><b>Mobile:</b>' + data.userMobile + '<p><b>Vehicle No:</b>' + data.vehcileNumber + '</p><div style="height:auto; width:150px"><p><b>Address:</b>' + data.address + '</p></div></div>');
+                                                infoWindow.setContent('<div class=infowindow style="max-width:190px"> <h3>' + data.userName + '</h3><h5><b>Employee Details:</b></h5><p><b>Date:</b>' + data.date + '</p><p><b>Time:</b>' + data.time + '</p><p><b>Mobile:</b>' + data.userMobile + '<div style="height:auto; width:150px"><p><b>Address:</b>' + data.address + '</p></div></div>');
                                                 infoWindow.open(map, marker);
                                             }
                                         });
