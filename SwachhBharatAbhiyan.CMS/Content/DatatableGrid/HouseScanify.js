@@ -68,7 +68,7 @@ $(document).ready(function () {
         buttons: [
 
                       {
-                          extend: 'excel', className: 'btn btn-sm btn-success filter-button-style', title: appName, text: 'Export to Excel', exportOptions: { columns: [1, 4] }
+                          extend: 'excel', className: 'btn btn-sm btn-success filter-button-style', title: appName, text: 'Export to Excel', exportOptions: { columns: [1,3, 4,5,6,7,8,9,10,12] }
                       },
         ],
         //"sDom": "ltipr",
